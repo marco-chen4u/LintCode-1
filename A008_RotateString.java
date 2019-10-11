@@ -1,5 +1,6 @@
-public class rotateString {
+package javaCode;
 
+public class A008_RotateString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s = new String("abcdefg");
@@ -11,8 +12,8 @@ public class rotateString {
 	public static void rotateString(char[] str, int offset) {
         // write your code here
         char temp;
-        if(str.length == 0 || offset == 0) return;
-     
+        if(str.length == 0) return;
+        if(offset == 0) return;
         if(str.length < offset) offset = offset % str.length;
         while(offset>0){
             temp = str[str.length-1];
